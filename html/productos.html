@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="../styles/bootstrap.css">
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/animate.css">
+    <link rel="stylesheet" href="../styles/productos.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header class="fixed-top">
+        <!-- #################### NAVEGACION ##################### -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <!-- #################### LOGO ##################### -->
+            <img id="logo" src="../img/LogoSemillero-removebg-preview.png" alt="logo"
+                class="animate__animated animate__slideInDown">
+            <div class="container-fluid">
+                <div class="d-none d-lg-flex animate__animated animate__slideInDown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"> <a class="nav-link" href="../index.html">Home</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="./sobre-semillero.html">Sobre el
+                                semillero</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="./eventos.html">Eventos</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="./equipos.html">Equipos</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="./resultados.html">Resultados</a> </li>
+                        <li class="nav-item"> <a class="nav-link active" href="./productos.html">Productos</a> </li>
+                    </ul>
+                </div> <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#menuLateral"> <span class="bi bi-list" style="color: #1A3A2A;"></span> </button>
+                <div class="offcanvas offcanvas-end text-bg-dark d-lg-none" tabindex="-1" id="menuLateral">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title">Menú</h5> <button type="button" class="btn-close btn-close-black"
+                            data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"> <a class="nav-link" href="../index.html">Home</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="./sobre-semillero.html">Sobre el
+                                    semillero</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="./eventos.html">Eventos</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="./equipos.html">Equipos</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="./resultados.html">Resultados</a>
+                            </li>
+                            <li class="nav-item"> <a class="nav-link active" href="./productos.html">Productos</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <!-- BOTONES -->
+        <div class="mb-3">
+            <button class="btn btn-primary" onclick="mostrar('libros')">Libros</button>
+            <button class="btn btn-primary" onclick="mostrar('ponencias')">Ponencias</button>
+            <button class="btn btn-primary" onclick="mostrar('articulos')">Artículos</button>
+        </div>
+    </div>
+
+    <!-- CONTENIDO -->
+
+    <section id="libros" class="contenido">
+        <h4>Libros</h4>
+        <!-- #########################################LIBRO 1 #################################### -->
+        <div class="subcontenido">
+            <img src="../img/submission_50_50_coverImage_es_t.png" alt="libro1">
+            <article class="producto">
+                <h5><b>Estadística I: Análisis de datos para la toma de decisiones informadas en la administración</b>
+                </h5>
+                <h6><b>Autor:</b> Jeammy Julieth Sierra Hernández</h6>
+                <p>año de publicación <br> 2024-08-23</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pdfModal">
+                    Ver Documento
+                </button>
+            </article>
+        </div>
+        <div class="modal fade" id="pdfModal" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Documento</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body p-0">
+                        <iframe src="../Doc/Estadística+I_23082024.pdf" width="100%" height="100%"></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- #########################################LIBRO 2#################################### -->
+        <div class="subcontenido">
+
+            <img src="../img/81eI+qUPYRL._SL1360_.jpg" alt="libro2">
+            <article class="producto">
+                <h5><b>
+                        Dive into Deep Learning
+                    </b>
+                </h5>
+                <h6><b>Autores:</b> Aston Zhang, Zachary C. Lipton , Mu Li, Alexander J. Smola</h6>
+                <p>año de publicación <br> 2021</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pdfModal1">
+                    Ver Documento
+                </button>
+            </article>
+        </div>
+        <div class="modal fade" id="pdfModal1" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Documento</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body p-0">
+                        <iframe src="../Doc/d2l-en.pdf" width="100%" height="100%"></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- #########################################LIBRO 3 #################################### -->
+        <div class="subcontenido">
+            <img src="../img/image.png" alt="libro3">
+            <article class="producto">
+                <h5> <b>INTELIGENCIA ARTIFICIAL
+                        Y SECTOR PÚBLICO
+                        Retos, límites y medios
+                    </b>
+                </h5>
+                <h6><b>Autor:</b> EDUARDO GAMERO CASADO
+                </h6>
+                <p>año de publicación <br> 2019</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pdfModal2">
+                    Ver Documento
+                </button>
+            </article>
+        </div>
+        <div class="modal fade" id="pdfModal2" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Documento</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body p-0">
+                        <iframe src="../Doc/9788411690638.pdf" width="100%" height="100%"></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="ponencias" class="contenido d-none">
+        <h4>Ponencias</h4>
+        <!-- ################################################## Ponencia 1 ################################# -->
+        <div class="subcontenido">
+            <img src="../img/5e6e2da0-dfe6-437b-a301-271e04343443.jpg" alt="Ponencia1">
+            <article class="producto">
+                <h5><b>Optimización de Procesos con Inteligencia Artificial Aplicada</b>
+                </h5>
+                <h6><b>Autor:</b> Jacob Ruiz
+                </h6>
+                <p>año de publicación <br> 2025</p>
+                <a href="https://youtu.be/BPis75kWvyw" target="_blank" class="btn btn-primary">
+                    Ver ponencia
+                </a>
+            </article>
+        </div>
+        <hr>
+        <!-- ################################################## Ponencia 2 ################################# -->
+        <div class="subcontenido">
+            <img src="../img/76f202bc-700d-479a-81d1-577dbb44fc7a.jpg" alt="Ponencia2">
+            <article class="producto">
+                <h5> <b>
+                        Aplicaciones de Sistemas Inteligentes - Modelado y Optimización de procesos
+                    </b>
+                </h5>
+                <h6><b>Autor:</b> Rolando Javier Praga Alejo
+                </h6>
+                <p>año de publicación <br> 2024</p>
+                <a href="https://www.youtube.com/watch?v=vl09Om-wWRg&pp=ygU-cG9uZW5jaWFzIGRlIFNpc3RlbWFzIEludGVsaWdlbnRlcyB5IE9wdGltaXphY2nDs24gZGUgUHJvY2Vzb3M%3D"
+                    target="_blank" class="btn btn-primary">
+                    Ver ponencia
+                </a>
+            </article>
+        </div>
+        </div>
+        <hr>
+        <!-- ################################################## Ponencia 3 ################################# -->
+        <div class="subcontenido">
+            <img src="../img/35a7d8d2-6a55-4fc9-a040-45e60f5b25d5.jpg" alt="Ponencia3">
+            <article class="producto">
+                <h5><b>
+                        Métodos, técnicas y herramientas para la optimización de procesos y recursos.
+                    </b>
+                </h5>
+                <h6><b>Autor:</b> Ashanty Matus Betanzos
+                </h6>
+                <p>año de publicación <br> 2020</p>
+                <a href="https://www.youtube.com/watch?v=P-3RY9RyOIk&pp=ygU-cG9uZW5jaWFzIGRlIFNpc3RlbWFzIEludGVsaWdlbnRlcyB5IE9wdGltaXphY2nDs24gZGUgUHJvY2Vzb3M%3D"
+                    target="_blank" class="btn btn-primary">
+                    Ver ponencia
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <section id="articulos" class="contenido d-none">
+        <h4>Artículos</h4>
+        <!-- ################################################## ARTICULO 1 ################################# -->
+        <div class="subcontenido">
+
+            <img src="../img/cover_issue_217_es.jpg" alt="articulo1">
+            <article class="producto">
+                <h5><b>NATURALEZA DE LA INNOVACIÓN TECNOLÓGICA EN LAS ORGANIZACIONES DE DESARROLLO DE SOFTWARE COMO
+                        SERVICIO
+                        DEL
+                        MUNICIPIO MARACAIBO
+                    </b></h5>
+                <h6><b>Autor:</b> Arnoldo Jose Perozo
+                </h6>
+                <p>año de publicación <br> 2014-05-10</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pdfModal3">
+                    Ver Documento
+                </button>
+            </article>
+        </div>
+        <div class="modal fade" id="pdfModal3" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Documento</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body p-0">
+                        <iframe src="../Doc/2652-Texto+del+artículo-5537-1-10-20180504.pdf" width="100%"
+                            height="100%"></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- ################################################## ARTICULO 2 ################################# -->
+        <div class="subcontenido">
+
+            <img src="../img/submission_403_378_coverImage_es_ES.png" alt="articulo2">
+            <article class="producto">
+                <h5><b>Aplicación de la transferencia tecnológica para la validación de la pertinencia de desarrollos de
+                        software
+                        para la formulación de proyectos de investigación e innovación
+                    </b></h5>
+                <h6><b>Autores:</b> Nilza Elena Viana-Rua, Ana Alexandra Pino, John Jairo Castro Maldonado, Julián
+                    Alberto
+                    Patiño Murillo
+                </h6>
+                <p>año de publicación <br> 2021-07-03</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pdfModal4">
+                    Ver Documento
+                </button>
+            </article>
+        </div>
+        <div class="modal fade" id="pdfModal4" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Documento</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body p-0">
+                        <iframe src="../Doc/Art2_id403_Viana_Transf.pdf" width="100%" height="100%"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- ################################################## ARTICULO 3 ################################# -->
+        <div class="subcontenido">
+            <img src="../img/content (1).jpg" alt="articulo3">
+            <article class="producto">
+                <h5><b>
+
+                        Caracterización de la innovación tecnológica y el capital relacional en la industria del
+                        software de
+                        Ibagué,
+                        Colombia
+                    </b>
+                </h5>
+                <h6><b>Autores:</b> Otálora, Johanna , Bermeo Andrade, Helga , González Bañales, Dora
+                </h6>
+                <p>año de publicación <br> 2009</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pdfModal5">
+                    Ver Documento
+                </button>
+            </article>
+        </div>
+        <div class="modal fade" id="pdfModal5" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Documento</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body p-0">
+                        <iframe src="../Doc/db1c51ab-edac-49e9-a104-b956801c2ee3.pdf" width="100%"
+                            height="100%"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- ######################### socialmedia ##################### -->
+        <aside id="socialmedia" data-aos="fade-right" data-aos-duration="1000">
+            <a class="bi bi-youtube" href="#" style="color: #FF0000;"></a>
+            <a class="bi bi-instagram" href="#" style="color: #833AB4;"></a>
+            <a class="bi bi-facebook" href="#" style="color: #1877F2;"></a>
+        </aside>
+        <!-- ############################### Datos de contacto ##################### -->
+        <div id="datoscontact" data-aos="fade-right" data-aos-duration="1000">
+            <h2>Datos de contacto</h2>
+            <p> 📍 Dirección: Calle 18 #12-45, Florencia, Caquetá<br>
+                📞 Teléfono: +57 310 456 7890<br>
+                📧 Correo electrónico: contacto@miempresa.com
+            </p>
+            <hr id="linea">
+        </div>
+
+        <!-- ############################### formulario de contacto ##################### -->
+        <div id="formulario" data-aos="fade-right" data-aos-duration="1000">
+            <h2>Contactanos</h2>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput2" class="form-label">Correo Electronico</label>
+                <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="Correo Electronico">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div id="botonsito">
+                <button class="btn btn-primary">Enviar</button>
+            </div>
+        </div>
+        <div id="copyright">
+            © 2026 Semillero de Programación. Todos los derechos reservados.
+        </div>
+    </footer>
+
+
+
+
+    <script>
+        function ajustarPadding() {
+            const header = document.querySelector("header");
+            const altura = header.offsetHeight;
+            document.body.style.paddingTop = altura + "px";
+        }
+
+        window.addEventListener("load", ajustarPadding);
+        window.addEventListener("resize", ajustarPadding);
+    </script>
+    <script>
+        function mostrar(seccion) {
+            const contenidos = document.querySelectorAll('.contenido');
+
+            contenidos.forEach(c => c.classList.add('d-none'));
+
+            document.getElementById(seccion).classList.remove('d-none');
+        }
+    </script>
+    <script>
+        function abrirPDF(ruta) {
+            if (window.innerWidth < 768) {
+                window.open(ruta, '_blank');
+            } else {
+                document.getElementById("visorPDF").src = ruta;
+                new bootstrap.Modal(document.getElementById('pdfModal')).show();
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="../js/bootstrap.js"></script>
+</body>
+
+</html>

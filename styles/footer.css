@@ -1,0 +1,175 @@
+body {
+    footer {
+        background-color: #111C16;
+        color: #E8F5EE;
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+
+        #socialmedia {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 20px;
+        }
+
+        #datoscontact {
+
+            h2 {
+                font-size: 22px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        }
+
+        #botonsito {
+            display: flex;
+            justify-content: center;
+
+            .btn.btn-primary {
+                background: #2E9E72;
+                color: #FFFFFF;
+                border: none;
+                border-radius: 20px;
+                padding: 10px 25px;
+            }
+
+            .btn.btn-primary:hover {
+                background: #1A3A2A;
+            }
+        }
+
+        #formulario {
+            width: 100%;
+
+            h2 {
+                font-size: 22px;
+                margin-bottom: 15px;
+            }
+
+            .form-control {
+                background: rgba(255, 255, 255, 0.05);
+                border: 1px solid rgba(255, 255, 255, 0.15);
+                border-radius: 20px;
+                padding: 10px 25px;
+            }
+        }
+
+        #copyright {
+            text-align: center;
+            font-size: 12px;
+            color: rgba(232, 245, 238, 0.4);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 15px;
+            margin-top: 10px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    body {
+        footer {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto 1fr 1fr auto;
+            grid-template-areas:
+                "socialmedia socialmedia"
+                "formulario datoscontact"
+                "formulario datoscontact"
+                "copyright copyright";
+
+            #socialmedia {
+                grid-area: socialmedia;
+                font-size: 22px;
+                margin: 0 10px;
+
+            }
+
+            #formulario {
+                grid-area: formulario;
+                padding-right: 30px;
+            }
+
+            #datoscontact {
+                grid-area: datoscontact;
+
+                h2 {
+                    font-size: 22px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: 14px;
+                    line-height: 1.6;
+                }
+
+                #linea {
+                    display: none;
+                }
+            }
+
+            #copyright {
+                grid-area: copyright;
+            }
+
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+
+        footer {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-areas:
+                "socialmedia socialmedia"
+                "formulario datoscontact"
+                "copyright copyright";
+
+            #socialmedia {
+                grid-area: socialmedia;
+                font-size: 26px;
+                margin: 0 12px;
+
+            }
+
+            #formulario {
+                grid-area: formulario;
+            }
+
+            #datoscontact {
+                grid-area: datoscontact;
+
+                h2 {
+                    font-size: 26px;
+                    margin-bottom: 12px;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 1.8;
+                }
+
+                #linea {
+                    display: none;
+                }
+            }
+
+            #copyright {
+                grid-area: copyright;
+            }
+        }
+
+    }
+}

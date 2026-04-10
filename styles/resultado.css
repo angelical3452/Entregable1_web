@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #2D2D2D;
+
+    #resultado1 {
+        background: #E8F5EE;
+        padding: 60px 20px;
+        border-bottom: 2px solid rgba(46, 158, 114, 0.2);
+
+        h3 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 25px;
+        }
+
+        article {
+            border-left: 4px solid #2E9E72;
+            padding-left: 15px;
+
+
+            h4 {
+                font-size: 20px;
+                margin-bottom: 10px;
+                line-height: 1.4;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 1.6;
+                margin-top: 8px;
+            }
+        }
+    }
+
+    #resultado2 {
+        background: #FDECEA;
+        padding: 60px 20px;
+        border-bottom: 2px solid rgba(200, 48, 42, 0.2);
+
+        article {
+            border-right: 4px solid #C8302A;
+            padding-left: 15px;
+
+            h4 {
+                font-size: 20px;
+                margin-bottom: 10px;
+                line-height: 1.4;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 1.6;
+                margin-top: 8px;
+            }
+        }
+    }
+
+    #resultado3 {
+        background: #E8F5EE;
+        padding: 60px 20px;
+        border-bottom: 2px solid rgba(46, 158, 114, 0.2);
+
+        article {
+            border-left: 4px solid #2E9E72;
+            padding-left: 15px;
+
+            h4 {
+                font-size: 20px;
+                margin-bottom: 10px;
+                line-height: 1.4;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 1.6;
+                margin-top: 8px;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+
+        #resultado1,
+        #resultado2,
+        #resultado3 {
+            padding: 60px 40px;
+
+            article {
+
+                h1 {
+                    font-size: 32px;
+                }
+
+                h3 {
+                    font-size: 22px;
+                }
+
+                p {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+
+        #resultado1,
+        #resultado2,
+        #resultado3 {
+            padding: 80px 120px;
+
+            article {
+
+                h1 {
+                    font-size: 36px;
+                }
+
+                h3 {
+                    font-size: 24px;
+                }
+
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

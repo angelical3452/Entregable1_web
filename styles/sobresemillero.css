@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+body {
+    background-color: #FFFFFF;
+
+    #contenido {
+
+        #resenia {
+            padding: 70px 20px;
+            color: #2D2D2D;
+
+            h3 {
+                text-align: center;
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 1.8;
+                text-align: justify;
+            }
+        }
+
+        #Mision {
+            padding: 60px 20px;
+            background: #FDECEA;
+            border-left: 4px solid #C8302A;
+
+            h4 {
+                font-size: 26px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                line-height: 1.7;
+                text-align: justify;
+                color: #2D2D2D;
+            }
+        }
+
+        #Vision {
+            padding: 60px 20px;
+            border-right: 6px solid #2E9E72;
+
+            h4 {
+                font-size: 26px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-style: italic;
+                line-height: 1.7;
+                text-align: justify;
+                color: #2D2D2D;
+            }
+        }
+
+        #objetivos {
+            padding: 80px 20px;
+            background: #FDECEA;
+
+            h4 {
+                text-align: center;
+                font-size: 26px;
+                margin-bottom: 20px;
+            }
+
+            ul {
+                columns: 2;
+                gap: 30px;
+
+                li {
+                    margin-bottom: 10px;
+                    color: #2D2D2D;
+                    line-height: 1.6;
+                }
+            }
+        }
+
+        #Lineasinvs {
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            h4 {
+                text-align: center;
+                margin-bottom: 25px;
+                font-size: 26px;
+            }
+
+            .lineas {
+                padding: 20px;
+                border-radius: 10px;
+                border-top: 5px solid #2E9E72;
+                box-shadow: 0px 4px 15px rgba(46, 158, 114, 0.1);
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        #contenido {
+            #Lineasinvs {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(4, auto);
+                grid-template-areas:
+                    "titulo titulo"
+                    "linea1 linea2"
+                    "linea3 linea4";
+
+                .lineas {
+                    padding: 30px;
+                }
+
+                h4 {
+                    grid-area: titulo;
+                }
+
+                #linea1 {
+                    grid-area: linea1;
+                }
+
+                #linea2 {
+                    grid-area: linea2;
+                }
+
+                #linea3 {
+                    grid-area: linea3;
+                }
+
+                #linea4 {
+                    grid-area: linea4;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        #contenido {
+            #Lineasinvs {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(3, 0.2fr);
+                grid-template-areas:
+                    "titulo titulo"
+                    "linea1 linea2"
+                    "linea3 linea4";
+
+                .lineas {
+                    padding: 50px;
+                }
+
+                h4 {
+                    grid-area: titulo;
+                }
+
+                #linea1 {
+                    grid-area: linea1;
+                }
+
+                #linea2 {
+                    grid-area: linea2;
+                }
+
+                #linea3 {
+                    grid-area: linea3;
+                }
+
+                #linea4 {
+                    grid-area: linea4;
+                }
+            }
+        }
+    }
+}
